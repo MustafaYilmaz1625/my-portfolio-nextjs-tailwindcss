@@ -1,7 +1,11 @@
-import React from 'react'
 
 export const Home = () => {
+ 
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <header className="header">
+       home
+      </header>
+    </>
+  );
+};

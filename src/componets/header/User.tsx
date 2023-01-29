@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function User() {
+export const User = () => {
   return (
     <div>User</div>
   )
