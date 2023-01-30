@@ -1,6 +1,6 @@
 import Medicine from "../../assets/images/Medicine.svg";
 import { AiOutlineSearch } from "react-icons/ai";
-// import Card from './Card';
+import Card from './Card';
 import { User } from "./User";
 
 function Header() {
@@ -17,7 +17,7 @@ function Header() {
           <div className="">
             <img src={Medicine} alt="Medicine" />
           </div>
-          <div className=" border-2 border-solid border-gray-900 rounded-md text-lg sm:flex sm:justify-between sm:items-center px-5 w-[600px]">
+          <div className=" border-2 border-solid border-gray-900 rounded-md text-lg hidden sm:flex sm:justify-between sm:items-center px-5 w-[600px]">
             <AiOutlineSearch className="text-xl mr-4" />
             <input
               type="text"
@@ -26,7 +26,7 @@ function Header() {
             />
           </div>
           <div className="flex justify-between items-center">
-            {/* <Card /> */}
+            <Card />
             <User />
           </div>
         </div>
