@@ -5,7 +5,17 @@ import { slide } from "../../assets/data/data";
 export const Slider = () => {
   return (
     <>
-      <div>silider</div>
+      <div className="slider">
+        <div className="container grid">
+          {slide.map((item, i) => (
+            <div className="box" key={i}>
+              <div className="img">
+                <img src={item.image} alt="" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
