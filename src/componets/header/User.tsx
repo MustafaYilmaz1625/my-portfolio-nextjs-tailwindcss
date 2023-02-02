@@ -13,7 +13,7 @@ export const User = () => {
   const [profileOpen, setProfileOpen] = useState(false);
 
   const close = () => {
-    setProfileOpen(null);
+    setProfileOpen(false);
   };
 
   // const dispatch = useDispatch();
@@ -22,7 +22,7 @@ export const User = () => {
   // };
   return (
     <>
-      <div className="profile">
+      <div className="profile ml-[30px] cursor-default">
         {user ? (
           <>
             <button
@@ -36,11 +36,12 @@ export const User = () => {
             </button>
 
             {profileOpen && (
-              <div className="openProfile boxItems" onClick={close}>
-                <div className="image">
+              <div className="openProfile boxItems text-[#000] shadow-lg absolute top-20 right-[10px] w-[250px] bg-[#fff] border border-solid border-[#e6e6e6] rounded-xl p-5 "  onClick={close}>
+                <div className="image flex pb-5">
                   <Link to="/account">
                     <div className="img">
                       <img
+                      className="mr-5"
                         src="https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
                         alt=""
                       />
@@ -69,7 +70,9 @@ export const User = () => {
                   <GrHelp className="icon" />
                   <h4>Help</h4>
                 </button>
-                <button className="box" onClick={logoutHandler}>
+                <button className="box"
+                //  onClick={logoutHandler}
+                 >
                   <BiLogOut className="icon" />
                   <h4>Log Out</h4>
                 </button>
