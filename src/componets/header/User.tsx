@@ -12,9 +12,9 @@ export const User = () => {
   const user = true;
   const [profileOpen, setProfileOpen] = useState(false);
 
-  const close = () => {
-    setProfileOpen(null);
-  };
+  // const close = () => {
+  //   setProfileOpen(null);
+  // };
 
   // const dispatch = useDispatch();
   // const logoutHandler = (e) => {
@@ -23,7 +23,7 @@ export const User = () => {
   return (
     <>
       <div className="profile">
-        {user ? (
+        {/* {user ? ( */}
           <>
             <button
               className="img"
@@ -35,7 +35,7 @@ export const User = () => {
               />
             </button>
 
-            {profileOpen && (
+            {/* {profileOpen && ( */}
               <div className="openProfile boxItems" onClick={close}>
                 <div className="image">
                   <Link to="/account">
@@ -69,16 +69,16 @@ export const User = () => {
                   <GrHelp className="icon" />
                   <h4>Help</h4>
                 </button>
-                <button className="box" onClick={logoutHandler}>
+                <button className="box">
                   <BiLogOut className="icon" />
                   <h4>Log Out</h4>
                 </button>
               </div>
-            )}
+            // )}
           </>
-        ) : (
-          <button>My Account</button>
-        )}
+        // ) : (
+        //   <button>My Account</button>
+        // )}
       </div>
     </>
   );
