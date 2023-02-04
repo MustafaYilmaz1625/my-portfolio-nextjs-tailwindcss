@@ -1,8 +1,7 @@
 import React from "react";
-import "./slider.css";
 import { slide } from "../../assets/data/data";
 
-export const Slider = () => {
+ const Slider = () => {
   return (
     <>
       <div className="slider ">
@@ -19,3 +18,5 @@ export const Slider = () => {
     </>
   );
 };
+
+export default Slider
