@@ -1,3 +1,4 @@
+import { Order } from "../../componets/hero/Order";
 import  Slider  from "../../componets/hero/Slider";
 
 export const Home = () => {
@@ -6,6 +7,7 @@ export const Home = () => {
     <>
       <header className="header">
        <Slider/>
+       <Order/>
       </header>
     </>
   );
