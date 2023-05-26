@@ -1,16 +1,15 @@
-import Layout from '@/components/Layout'
-import Image from 'next/image'
-import profilePic from "../../public/images/profile/developer-pic-1.png"
-import AnimatedText from '@/components/AnimatedText';
-import Link from 'next/link';
-import { LinkArrow } from '@/components/Icons';
-import HireMe from '@/components/HireMe';
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
-
+import Layout from "@/components/Layout";
+import Image from "next/image";
+import profilePic from "../../public/images/profile/developer-pic-1.png";
+import AnimatedText from "@/components/AnimatedText";
+import Link from "next/link";
+import { LinkArrow } from "@/components/Icons";
+import HireMe from "@/components/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 export default function Home() {
   return (
-    <main className="flex items-center text-dark w-full min-h-screen">
+    <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
       <Layout className="pt-0">
         <div className="flex items-center just w-full">
           <div className="w-1/2">
@@ -31,8 +30,9 @@ export default function Home() {
                 href="/dummy.pdf"
                 target={"_blank"}
                 className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold  hover:bg-light hover:text-dark 
-              border border-solid border-transparent hover:border
-              "
+              border-2 border-solid border-transparent hover:border-dark
+               dark:bg-light dark:text-dark hover:dark:bg-dark
+                hover:dark:text-light  hover:dark:border:light            "
                 download={true}
               >
                 Resume <LinkArrow className="w-6 ml-1" />
@@ -40,7 +40,7 @@ export default function Home() {
               <Link
                 href="mailto:myyilmaz1625@gmail.com"
                 target={"_blank"}
-                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                className="ml-4 text-lg font-medium capitalize dark:text-light text-dark underline"
               >
                 Contact
               </Link>
@@ -49,7 +49,10 @@ export default function Home() {
         </div>
       </Layout>
       <HireMe />
-     <div className='absolute right-8 bottom-8 inline-block w-24'> <Image src={lightBulb} alt="Codebucks" className="w-full h-auto" /></div>
+      <div className="absolute right-8 bottom-8 inline-block w-24">
+        {" "}
+        <Image src={lightBulb} alt="Codebucks" className="w-full h-auto" />
+      </div>
     </main>
   );
 }
