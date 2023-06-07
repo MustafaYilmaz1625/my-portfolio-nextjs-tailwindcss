@@ -100,16 +100,16 @@ const NavBar = () => {
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com"
+            href="https://www.linkedin.com/in/mustafa-y%C4%B1lmaz-4b196023a/"
             target={"_blank"}
+            className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3"
           >
-            <TwitterIcon />
+            <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://github.com/MustafaYilmaz1625"
             target={"_blank"}
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -120,14 +120,14 @@ const NavBar = () => {
           <motion.a
             href="https://twitter.com"
             target={"_blank"}
-            className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
+            className="w-6 mx-3"
           >
-            <LinkedInIcon />
+            <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://tr.pinterest.com/ideas/"
             target={"_blank"}
             className="w-6 mx-3 bg-light rounded-full"
             whileHover={{ y: -2 }}
@@ -136,7 +136,7 @@ const NavBar = () => {
             <PinterestIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://dribbble.com/"
             target={"_blank"}
             className="w-6 ml-3"
             whileHover={{ y: -2 }}
@@ -161,7 +161,7 @@ const NavBar = () => {
       </div>
       {isOpen && (
         <motion.div
-          initial={{ scale: 0, opacity:0, x: "-50%", y: "-50%" }}
+          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col justify-between items-center z-30 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
       bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
@@ -198,16 +198,16 @@ const NavBar = () => {
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
-              href="https://twitter.com"
+              href="https://www.linkedin.com/in/mustafa-y%C4%B1lmaz-4b196023a/"
               target={"_blank"}
+              className="w-6 mx-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3 sm:mx-1 sm:mx-1"
             >
-              <TwitterIcon />
+              <LinkedInIcon />
             </motion.a>
             <motion.a
-              href="https://twitter.com"
+              href="https://github.com/MustafaYilmaz1625"
               target={"_blank"}
               className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
               whileHover={{ y: -2 }}
@@ -218,14 +218,15 @@ const NavBar = () => {
             <motion.a
               href="https://twitter.com"
               target={"_blank"}
-              className="w-6 mx-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
+              className="w-6 mx-3 sm:mx-1 sm:mx-1"
             >
-              <LinkedInIcon />
+              <TwitterIcon />
             </motion.a>
+
             <motion.a
-              href="https://twitter.com"
+              href="https://tr.pinterest.com/ideas/"
               target={"_blank"}
               className="w-6 mx-3 bg-light rounded-full sm:mx-1"
               whileHover={{ y: -2 }}
@@ -234,7 +235,7 @@ const NavBar = () => {
               <PinterestIcon />
             </motion.a>
             <motion.a
-              href="https://twitter.com"
+              href="https://dribbble.com/"
               target={"_blank"}
               className="w-6 ml-3 sm:mx-1"
               whileHover={{ y: -2 }}
