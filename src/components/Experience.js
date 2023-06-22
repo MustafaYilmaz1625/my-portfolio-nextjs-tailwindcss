@@ -43,29 +43,26 @@ const Experience = () => {
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
-        style={{scaleY:scrollYProgress}}
-        className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light 
-        md:w-[2px] md:left-[30px] xs:left-[20px] " />
+          style={{ scaleY: scrollYProgress }}
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light 
+        md:w-[2px] md:left-[30px] xs:left-[20px] "
+        />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer "
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="Frontend Developer "
+            company="Kitchrest"
+            companyLink="https://www.linkedin.com/company/kitchrest/people/"
+            time="Dec/2022-June/2023"
+            address="Istanbul"
+            work="I started the project by correcting the mistakes in the style structure.Then I carried out the development tasks; Adding bulk tables , open account operations , account transactions ."
           />
           <Details
-            position="Software Engineer "
-            company="Google"
-            companyLink="www.google.com"
+            position="Frontend Developer Student "
+            company="Patika.dev"
+            companyLink="https://www.patika.dev/tr"
             time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            address="Istanbul"
+            work="I learned HTML, CSS, JavaScript and React .js respectively. Then I took TailwindCSS, TypeScript and Material UI courses. I reinforced what I learned with projects."
           />
         </ul>
       </div>
