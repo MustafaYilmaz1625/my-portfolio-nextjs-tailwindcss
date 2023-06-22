@@ -46,18 +46,16 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Bachelor Of Science In Computer Science "
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-Intelligence."
+            type="Bachelor Of Science In Industrial Engineering "
+            time="2011-2015"
+            place="Ankara"
+            info="it is a branch of engineering that provides the most efficient production and distribution of products and services, the design, operation and management of systems consisting of limited resources such as machinery, labor, raw materials, information, energy, environment and money, and the development of productivity and competitiveness of these systems."
           />
           <Details
-            type="Bachelor Of Science In Computer Science "
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-Intelligence."
+            type="Master, Master of Business Administration "
+            time="2018-2020"
+            place="University Of Mediterranean Karpasia"
+            info="I finished my thesis titled 'The interaction between Total Quality and Human Resources Management'."
           />
         </ul>
       </div>
